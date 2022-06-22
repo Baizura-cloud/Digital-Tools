@@ -22,18 +22,6 @@ import {
   selectCount,
 } from './counterSlice';
 
-function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 const theme = createTheme();
 
@@ -61,7 +49,6 @@ export function Counter() {
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
               <Card variant="outlined" sx={{ maxWidth: 500 }}>
                 <CardContent style={{backgroundColor: '#f5f5f5'}}>
-                  {/* <Grid container > */}
                     <Stack direction="column" spacing={4}>
                       <Grid item xs={12}>
                         <TextField
@@ -111,27 +98,8 @@ export function Counter() {
                         </Stack>
                       </Grid>
                     </Stack>
-
-                  {/* </Grid> */}
                 </CardContent>
               </Card>
-
-
-              {/* <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                sx={{ mt: 3, mb: 2 }}
-              >
-                Sign Up
-              </Button> */}
-              {/* <Grid container justifyContent="flex-end">
-                <Grid item>
-                  <Link href="#" variant="body2">
-                    Already have an account? Sign in
-                  </Link>
-                </Grid>
-              </Grid> */}
             </Box>
         </Container>
       </ThemeProvider>
