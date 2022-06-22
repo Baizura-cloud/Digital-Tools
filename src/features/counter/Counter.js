@@ -4,23 +4,12 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
-import {
-  decrement,
-  increment,
-  incrementByAmount,
-  incrementAsync,
-  incrementIfOdd,
-  selectCount,
-} from './counterSlice';
 
 
 const theme = createTheme();
@@ -35,12 +24,6 @@ export function Counter() {
     });
   };
 
-  const count = useSelector(selectCount);
-  const dispatch = useDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
-
-  const incrementValue = Number(incrementAmount) || 0;
-
   return (
     <div>
       <ThemeProvider theme={theme}>
@@ -52,7 +35,6 @@ export function Counter() {
                     <Stack direction="column" spacing={4}>
                       <Grid item xs={12}>
                         <TextField
-                          required
                           fullWidth
                           id="answer"
                           name="answer"
@@ -103,26 +85,6 @@ export function Counter() {
             </Box>
         </Container>
       </ThemeProvider>
-      {/* <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={12}>
-          <Button variant="outlined" onClick={() => dispatch(decrement())} >-</Button>
-          <span >{count}</span>
-          <Button variant="outlined" onClick={() => dispatch(increment())} >+</Button>
-        </Grid>
-        <Grid item xs={2}>
-          <TextField id="outlined-basic" variant="outlined" value={incrementAmount}
-            onChange={(e) => setIncrementAmount(e.target.value)} />
-        </Grid>
-        <Grid item xs={3}>
-          <Button variant="outlined" onClick={() => dispatch(incrementByAmount(incrementValue))} >Add Amount</Button>
-        </Grid>
-        <Grid item xs={3}>
-          <Button variant="outlined" onClick={() => dispatch(incrementAsync(incrementValue))} >Add Async</Button>
-        </Grid>
-        <Grid item xs={3}>
-          <Button variant="outlined" onClick={() => dispatch(incrementIfOdd(incrementValue))} >Add If Odd</Button>
-        </Grid>
-      </Grid> */}
     </div>
   );
 }
