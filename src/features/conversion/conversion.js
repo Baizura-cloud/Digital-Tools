@@ -22,13 +22,6 @@ export default function Conversion() {
   const [to, setTo] = useState('myr');
   const [rate, setRate] = useState('')
 
-  // useEffect(() => {
-  //   axios.get('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur/jpy.json')
-  //     .then((response) => {
-  //       setRate(response.data)
-  //     })
-  // }, [])
-
   const changeFrom = (event) => {
     setFrom(event.target.value);
   };
