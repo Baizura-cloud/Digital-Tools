@@ -11,6 +11,7 @@ import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import History from '../history';
+
 const theme = createTheme();
 
 const initialHistory = []
@@ -56,7 +57,6 @@ export function Counter() {
       _history(answr)
     } catch (error) {
       console.log(error)
-      alert("Error: input invalid")
     }
     return false;
   }
@@ -84,17 +84,6 @@ export function Counter() {
                         defaultValue={0}
                       />
                     </Grid>
-                    {/* <Grid item xs={12}>
-                    <TextField
-                      fullWidth
-                      id="history"
-                      name="history"
-                      inputProps={
-                        { readOnly: true, }
-                      }
-                      value={history}
-                    />
-                  </Grid> */}
                     <Grid item xs={12} >
                       <Stack direction="row" spacing={4}>
                         <Button onClick={() => _calculate("7")} variant="outlined">7</Button>
