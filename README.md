@@ -1,11 +1,15 @@
-This is Sample web application build with React .Js
+This is Digital Tools (WIP)
+Currently contains calculator section and currency conversion section
 
-Deployed: https://calculator-9a7ab.web.app (not updated)
+Deployed: https://calculator-9a7ab.web.app/
 
 How to run locally:
  1. npm install
  2. npm start
  
+ Reference
+*currency API*
+https://github.com/fawazahmed0/currency-api#readme
  
  The UI: 
  Calculator
@@ -16,6 +20,7 @@ How to run locally:
 
 Currency Conversion
 
-![image](https://user-images.githubusercontent.com/53967791/237011322-6a9a5719-92d6-4182-83f1-36110142f1a0.png)
+![image](https://github.com/Baizura-cloud/Digital-Tools/assets/53967791/9ee72a35-8855-4adf-81fc-f5b861bff040)
+
 
 
