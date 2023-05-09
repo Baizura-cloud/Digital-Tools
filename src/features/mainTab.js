@@ -61,7 +61,7 @@ export function MainTab() {
         sx={{ borderRight: 1, borderColor: 'divider' }}
       >
         <Tab label="Calculator" {...a11yProps(0)} />
-        <Tab label="Money Conversion" {...a11yProps(1)} />
+        <Tab label="Currency Conversion" {...a11yProps(1)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <Counter />

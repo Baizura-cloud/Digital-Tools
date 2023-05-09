@@ -10,7 +10,7 @@ import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import History from '../history';
+import History from './history';
 
 const theme = createTheme();
 
